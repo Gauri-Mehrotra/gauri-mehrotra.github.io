@@ -116,29 +116,23 @@ main {
             font-weight: 200;
             font-size: 1.5dvw;
             letter-spacing: 5px;
+            text-align: center;
         }
         #placeOfBirth {
             margin-top: 2%;
             text-align: center;
-            font-size: 0.8dvw;
+            font-size: 1dvw;
             color: #444;
         }
-        #socialHandle {
+        #extraInfo {
             margin-top: auto;
             height: 10%;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 5%;
             background-color: rgb(255, 249, 243);
             border-bottom-left-radius: 1dvw;
-
-            img {
-                margin: 0;
-                width: 100%;
-                cursor: pointer;
-            }
         }
     }
     #description {
@@ -399,6 +393,9 @@ footer {
 #copyrightInfo {
     font-size: 1dvw;
     font-weight: 300;
+    a {
+        color: black;
+    }
 }
 #contactFooter {
     display: flex;
@@ -406,6 +403,43 @@ footer {
     justify-content: space-evenly;
     width: 40%;
     height: 100%;
+}
+#phone {
+    a {
+        text-decoration: none;
+        b {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+#write {
+    a {
+        text-decoration: none;
+        b {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+#letsConnect {
+    a {
+        text-decoration: none;
+        b {
+            display: flex;
+            align-items: center;
+        }
+    }
+    img {
+        height: 24px;
+        width: 24px;
+    }
+}
+.footerLinks {
+    border-bottom: 2px solid transparent;
+}
+.footerLinks:hover {
+    border-bottom: 2px solid rgb(0, 80, 255);
 }
 .contactMethods {
     height: 100%;
@@ -416,23 +450,10 @@ footer {
     justify-content: center;
     gap: 6%;
     b {
-        font-size: 1dvw;
+        font-size: 1.2dvw;
         font-weight: 500;
     }
-    p,
     a {
-        font-size: 0.9dvw;
         color: black;
-    }
-}
-#letsConnect {
-    img {
-        width: 50%;
-        cursor: pointer;
-    }
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }

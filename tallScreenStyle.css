@@ -105,16 +105,13 @@
                 line-height: 6.5dvw;
             }
             #userTitle {
-                font-size: 7dvw;
+                font-size: 6.5dvw;
             }
             #placeOfBirth {
                 font-size: 3.5dvw;
             }
-            #socialHandle {
+            #extraInfo {
                 border-radius: 0 0 3dvw 3dvw;
-                img {
-                    width: 80%;
-                }
             }
         }
         #description {
@@ -249,16 +246,7 @@
     }
     .contactMethods {
         b {
-            font-size: 4dvw;
-        }
-        p,
-        a {
-            font-size: 3dvw;
-        }
-    }
-    #letsConnect {
-        img {
-            width: 20%;
+            font-size: 3.5dvw;
         }
     }
 }
