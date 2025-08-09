@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #c3b6aa 0%, #c3b6aa 40%, rgb(36, 64, 110) 40%, rgb(36, 64, 110) 100%);
+}
+header {
+    height: 9dvw;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 249, 243);
+    z-index: 1;
+}
+#titleName {
+    display: flex;
+    align-items: center;
+    width: 15dvw;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6dvw;
+        font-weight: 700;
+    }
+}
+.dot {
+    width: 1.1dvw;
+    height: 1.1dvw;
+    background-color: rgb(0, 80, 255);
+    margin-right: 5%;
+    border-radius: 50%;
+}
+#horizontalLinks {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2dvw;
+    a {
+        text-decoration: none;
+        font-size: 1.6dvw;
+        font-weight: 300;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        color: black;
+    }
+    a:hover,
+    a.active {
+        border-bottom: 2px solid rgb(0, 80, 255);
+        color: rgb(0, 80, 255);
+    }
+}
+#linksMenu {
+    display: none;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60dvw;
+}
+#aboutMeCard {
+    margin-top: 2%;
+    width: 100%;
+    height: 35dvw;
+    display: flex;
+
+    #identity {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1dvw 0 0 1dvw;
+        background-color: rgb(244, 236, 230);
+        box-shadow: -4px 4px 10px rgba(91, 91, 91, 0.17);
+        img {
+            margin-top: 10%;
+            width: 50%;
+            border-radius: 50%;
+        }
+        #userName {
+            margin-top: 10%;
+            font-weight: 700;
+            font-size: 1.7dvw;
+            text-align: center;
+            line-height: 1.5dvw;
+        }
+        #divisionLine {
+            margin-top: 8%;
+            border-top: 2px solid rgb(0, 80, 255);
+            width: 15%;
+        }
+        #userTitle {
+            margin-top: 8%;
+            font-weight: 200;
+            font-size: 1.5dvw;
+            letter-spacing: 5px;
+        }
+        #placeOfBirth {
+            margin-top: 2%;
+            text-align: center;
+            font-size: 0.8dvw;
+            color: #444;
+        }
+        #socialHandle {
+            margin-top: auto;
+            height: 10%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5%;
+            background-color: rgb(255, 249, 243);
+            border-bottom-left-radius: 1dvw;
+
+            img {
+                margin: 0;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+    #description {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 4%;
+        background-color: rgb(255, 249, 243);
+        border-radius: 0 1dvw 1dvw 0;
+
+        #greetingTitle {
+            font-weight: 700;
+            font-size: 7dvw;
+        }
+        #whatIDo {
+            font-size: 1.5dvw;
+        }
+        #buttonHolder {
+            margin-top: 8%;
+            height: 7%;
+            display: flex;
+            align-items: center;
+            gap: 2%;
+            button,
+            a {
+                color: white;
+                text-decoration: none;
+                background-color: rgb(0, 80, 255);
+                border: 2px solid rgb(0, 80, 255);
+                border-radius: 2dvw;
+                box-sizing: content-box;
+                padding: 0% 2%;
+                width: 27.5%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1dvw;
+                font-weight: 400;
+                cursor: pointer;
+            }
+            button:hover,
+            a:hover {
+                background-color: white;
+                color: rgb(0, 80, 255);
+            }
+        }
+        #paraText,
+        #closingLine {
+            margin-top: 8%;
+            font-weight: 300;
+            font-size: 1dvw;
+        }
+    }
+}
+.sectionTitle {
+    margin-top: 8%;
+    scroll-margin-top: 12dvw;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    p {
+        font-size: 2dvw;
+        color: white;
+    }
+}
+#educationCard,
+#experienceCard {
+    margin-top: 2%;
+    width: 100%;
+    height: 28dvw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    box-shadow: -4px 4px 10px rgba(91, 91, 91, 0.17);
+    border-radius: 1dvw;
+}
+.schoolCardSlider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    border-radius: 1dvw;
+}
+.school {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    scroll-margin-top: 1000px;
+    scroll-snap-align: start;
+    background-color: rgb(244, 236, 230);
+}
+.schoolInfo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 80%;
+        border-radius: 50%;
+    }
+    p {
+        margin-top: 5%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1dvw;
+    }
+    .schoolLocation {
+        font-size: 0.8dvw;
+        color: #444;
+    }
+}
+.schoolDivider {
+    height: 75%;
+    border-left: 2px solid rgb(0, 80, 255);
+    margin: 0 5%;
+}
+.schoolDescription {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .schoolTitle,
+    .expPost {
+        font-size: 2.5dvw;
+    }
+    .expName {
+        font-weight: 300;
+        font-size: 2dvw;
+    }
+    .schoolSkillset {
+        margin-top: 5%;
+        font-size: 1dvw;
+    }
+}
+.navigators {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    a {
+        width: 1dvw;
+        height: 1dvw;
+        border-radius: 50%;
+        background-color: rgb(0, 80, 255);
+        border: 2px solid transparent;
+        opacity: 0.75;
+    }
+    a:hover,
+    a.active {
+        border: 2px solid black;
+        scale: 1.25;
+    }
+}
+#contactCard {
+    margin-top: 2%;
+    padding: 5% 8%;
+    width: 100%;
+    height: 45dvw;
+    background-color: rgb(244, 236, 230);
+    border-radius: 1dvw;
+    box-shadow: -4px 4px 10px rgba(91, 91, 91, 0.17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#firstLast,
+#emailTel {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#firstNameDiv,
+#lastNameDiv,
+#emailDiv,
+#telDiv,
+#subMess {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    label {
+        font-size: 1.25dvw;
+        font-weight: 500;
+    }
+    input,
+    textarea {
+        padding: 1rem 1rem;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        background-color: rgb(244, 236, 230);
+        font-size: 1dvw;
+    }
+    input:focus,
+    textarea:focus {
+        border-bottom: 2px solid rgb(0, 80, 255);
+    }
+}
+#subMess {
+    width: 100%;
+    height: 40%;
+}
+#sendMessage {
+    color: white;
+    margin-top: 5%;
+    background-color: rgb(0, 80, 255);
+    border: 2px solid rgb(0, 80, 255);
+    border-radius: 2dvw;
+    padding: 0% 2%;
+    width: 27.5%;
+    height: 8%;
+    font-size: 1dvw;
+    font-weight: 500;
+    cursor: pointer;
+}
+#sendMessage:hover {
+    background-color: white;
+    color: rgb(0, 80, 255);
+}
+#sendMessage:active {
+    background-color: rgb(0, 80, 255);
+    color: white;
+}
+footer {
+    margin-top: 5%;
+    height: 9dvw;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 249, 243);
+}
+#copyrightInfo {
+    font-size: 1dvw;
+    font-weight: 300;
+}
+#contactFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 100%;
+}
+.contactMethods {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    b {
+        font-size: 1dvw;
+        font-weight: 500;
+    }
+    p,
+    a {
+        font-size: 0.9dvw;
+        color: black;
+    }
+}
+#letsConnect {
+    img {
+        width: 50%;
+        cursor: pointer;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

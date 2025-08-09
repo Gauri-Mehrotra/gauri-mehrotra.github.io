@@ -1,0 +1,302 @@
+@media (orientation: portrait) {
+    header {
+        height: 15dvw;
+        padding: 0 5%;
+    }
+    #titleName {
+        width: 50dvw;
+        a {
+            font-size: 5dvw;
+        }
+    }
+    .dot {
+        width: 4dvw;
+        height: 4dvw;
+    }
+    #horizontalLinks {
+        display: none;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 15dvw;
+        height: 15dvw;
+        margin-right: 2dvw;
+        z-index: 10;
+        .bars {
+            background-color: black;
+            width: 100%;
+            height: 10%;
+            border-radius: 2dvw;
+            position: absolute;
+        }
+        #barOne {
+            width: 50%;
+            align-self: flex-start;
+            transform: translateY(-250%);
+            transform-origin: left;
+        }
+        #barThree {
+            width: 50%;
+            align-self: flex-end;
+            transform: translateY(250%);
+            transform-origin: right;
+        }
+    }
+    #linksMenu {
+        position: fixed;
+        top: 15dvw;
+        left: 100dvw;
+        width: 100dvw;
+        height: 100dvh;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(0px);
+    }
+    #filler {
+        width: 25%;
+        height: 100%;
+    }
+    #verticalLinks {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4%;
+        background-color: rgb(230, 218, 206);
+        a {
+            font-size: 6dvw;
+            font-weight: 700;
+            text-decoration: none;
+            color: black;
+        }
+        a.active {
+            border-bottom: 2px solid rgb(0, 80, 255);
+            color: rgb(0, 80, 255);
+        }
+    }
+    main {
+        width: 85dvw;
+    }
+    .sectionTitle {
+        margin-top: 15%;
+        scroll-margin-top: 25dvw;
+        p {
+            font-size: 6dvw;
+            color: white;
+        }
+    }
+    #aboutMeCard {
+        flex-direction: column;
+        height: 240dvw;
+        margin-top: 6%;
+        #identity {
+            width: 100%;
+            height: 60%;
+            border-radius: 3dvw;
+            #userName {
+                font-size: 8dvw;
+                line-height: 6.5dvw;
+            }
+            #userTitle {
+                font-size: 7dvw;
+            }
+            #placeOfBirth {
+                font-size: 3.5dvw;
+            }
+            #socialHandle {
+                border-radius: 0 0 3dvw 3dvw;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+        #description {
+            width: 100%;
+            height: 40%;
+            background-color: transparent;
+            color: white;
+            #greetingTitle {
+                font-size: 15dvw;
+            }
+            #whatIDo {
+                font-size: 5dvw;
+            }
+            #buttonHolder {
+                button,
+                a {
+                    border-radius: 5dvw;
+                    padding: 0.5% 2%;
+                    font-size: 3dvw;
+                }
+            }
+            #paraText,
+            #closingLine {
+                font-size: 3.5dvw;
+            }
+        }
+    }
+    #educationCard,
+    #experienceCard {
+        height: 145dvw;
+        margin-top: 6%;
+        border-radius: 3dvw;
+    }
+    .schoolCardSlider {
+        border-radius: 3dvw;
+    }
+    .school {
+        flex-direction: column;
+    }
+    .schoolInfo {
+        width: 75%;
+        img {
+            width: 100%;
+        }
+        p {
+            font-size: 5dvw;
+        }
+        .schoolLocation {
+            font-size: 3.5dvw;
+        }
+    }
+    .schoolDivider {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: 0;
+        width: 75%;
+        border-left: none;
+        border-top: 2px solid rgb(0, 80, 255);
+    }
+    .schoolDescription {
+        justify-content: flex-start;
+        .schoolTitle,
+        .expPost {
+            text-align: center;
+            font-size: 6dvw;
+        }
+        .expName {
+            text-align: center;
+            font-size: 5dvw;
+        }
+        .schoolSkillset {
+            text-align: center;
+            font-size: 2.5dvw;
+        }
+    }
+    .navigators {
+        width: 50%;
+        a {
+            width: 3dvw;
+            height: 3dvw;
+        }
+    }
+    #contactCard {
+        border-radius: 3dvw;
+        padding: 10% 8%;
+        height: 200dvw;
+    }
+    #firstLast,
+    #emailTel {
+        height: 30%;
+        flex-direction: column;
+    }
+    #firstNameDiv,
+    #lastNameDiv,
+    #emailDiv,
+    #telDiv,
+    #subMess {
+        width: 100%;
+        height: 100%;
+        label {
+            font-size: 5dvw;
+            font-weight: 500;
+        }
+        input,
+        textarea {
+            padding: 1rem 1rem;
+            font-size: 4dvw;
+        }
+    }
+    #subMess {
+        width: 100%;
+        height: 30%;
+    }
+    #sendMessage {
+        height: 8%;
+        width: 60%;
+        font-size: 4dvw;
+        border-radius: 8dvw;
+    }
+    footer {
+        height: 30dvw;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    #copyrightInfo {
+        font-size: 3dvw;
+        text-align: center;
+    }
+    #contactFooter {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .contactMethods {
+        b {
+            font-size: 4dvw;
+        }
+        p,
+        a {
+            font-size: 3dvw;
+        }
+    }
+    #letsConnect {
+        img {
+            width: 20%;
+        }
+    }
+}
+@keyframes upperBar {
+    0% {
+        transform: translateY(-250%) rotate(0);
+    }
+    100% {
+        transform: translateX(30%) translateY(-350%) rotate(45deg);
+    }
+}
+@keyframes middleBar {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+@keyframes lowerBar {
+    0% {
+        transform: translateY(250%) rotate(0);
+    }
+    100% {
+        transform: translateX(-30%) translateY(350%) rotate(45deg);
+    }
+}
+@keyframes menuSlide {
+    0% {
+        left: 100dvw;
+        background: none;
+    }
+    75% {
+        backdrop-filter: blur(0);
+    }
+    100% {
+        left: 0dvw;
+        backdrop-filter: blur(5px);
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+    }
+}
